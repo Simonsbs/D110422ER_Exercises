@@ -6,7 +6,7 @@ namespace Tests {
 		public void Exercises_RomanToInt2_TestIfResponseIs3() {
 			string valueToTest = "III";
 
-			int result = Exercises.Program.RomanToInt2(valueToTest);
+			int result = Exercises.EX1.RomanToInt2(valueToTest);
 
 			Assert.Equal(3, result);
 		}
@@ -15,7 +15,7 @@ namespace Tests {
 		public void Exercises_RomanToInt2_TestIfResponseIs5() {
 			string valueToTest = "V";
 
-			int result = Exercises.Program.RomanToInt2(valueToTest);
+			int result = Exercises.EX1.RomanToInt2(valueToTest);
 
 			Assert.Equal(5, result);
 		}
@@ -24,7 +24,7 @@ namespace Tests {
 		public void Exercises_RomanToInt2_TestIfResponseIs6() {
 			string valueToTest = "VI";
 
-			int result = Exercises.Program.RomanToInt2(valueToTest);
+			int result = Exercises.EX1.RomanToInt2(valueToTest);
 
 			Assert.Equal(6, result);
 		}
@@ -33,7 +33,7 @@ namespace Tests {
 		public void Exercises_RomanToInt2_TestIfResponseIs4() {
 			string valueToTest = "IV";
 
-			int result = Exercises.Program.RomanToInt2(valueToTest);
+			int result = Exercises.EX1.RomanToInt2(valueToTest);
 
 			Assert.Equal(4, result);
 		}
@@ -42,7 +42,7 @@ namespace Tests {
 		public void Exercises_RomanToInt2_TestIfResponseIs58() {
 			string valueToTest = "LVIII";
 
-			int result = Exercises.Program.RomanToInt2(valueToTest);
+			int result = Exercises.EX1.RomanToInt2(valueToTest);
 
 			Assert.Equal(58, result);
 		}
@@ -51,7 +51,7 @@ namespace Tests {
 		public void Exercises_RomanToInt2_TestIfResponseIs1994() {
 			string valueToTest = "MCMXCIV";
 
-			int result = Exercises.Program.RomanToInt2(valueToTest);
+			int result = Exercises.EX1.RomanToInt2(valueToTest);
 
 			Assert.Equal(1994, result);
 		}
