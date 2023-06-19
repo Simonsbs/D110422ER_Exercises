@@ -29,7 +29,7 @@ namespace Exercises {
 			foreach (char c in value) {
 				if (brackets.Contains(c)) {
 					sb.Append(c);
-				}				
+				}
 			}
 			return sb.ToString();
 		}
@@ -70,6 +70,93 @@ namespace Exercises {
 					if (buddyBracket == c) {
 						continue;
 					}
+					return false;
+				}
+			}
+
+			return openBracketsStack.Count == 0;
+		}
+
+		public static bool CheckBrackets2_BONUS(string value) {
+			Stack<char> openBracketsStack = new Stack<char>();
+
+			foreach (char c in value) {
+				if (bracketMap.ContainsKey(c)) {
+					openBracketsStack.Push(c);
+				} else if (bracketMap.ContainsValue(c)) {
+					if (openBracketsStack.Count == 0) {
+						return false;
+					}
+
+					char lastOpenedBracket = openBracketsStack.Pop();
+					char buddyBracket = bracketMap[lastOpenedBracket];
+					if (buddyBracket == c) {
+						continue;
+					}
+					return false;
+				}
+			}
+
+			return openBracketsStack.Count == 0;
+		}
+
+
+		// --------------------------------------------------------------
+
+		public static bool CheckBrackets3(string value) {
+			Stack<char> openBracketsStack = new Stack<char>();
+
+			foreach (char c in value) {
+				if (c == '(') {
+					openBracketsStack.Push(')');
+					continue;
+				}
+				if (c == '{') {
+					openBracketsStack.Push('}');
+					continue;
+				}
+				if (c == '[') {
+					openBracketsStack.Push(']');
+					continue;
+				}
+				if (c == '<') {
+					openBracketsStack.Push('>');
+					continue;
+				}
+
+				if (openBracketsStack.Count == 0 || c != openBracketsStack.Pop()) {
+					return false;
+				}
+			}
+
+			return openBracketsStack.Count == 0;
+		}
+
+
+		public static bool CheckBrackets3_BONUS(string value) {
+			Stack<char> openBracketsStack = new Stack<char>();
+
+			value = Filter_RegEx(value);
+
+			foreach (char c in value) {
+				if (c == '(') {
+					openBracketsStack.Push(')');
+					continue;
+				}
+				if (c == '{') {
+					openBracketsStack.Push('}');
+					continue;
+				}
+				if (c == '[') {
+					openBracketsStack.Push(']');
+					continue;
+				}
+				if (c == '<') {
+					openBracketsStack.Push('>');
+					continue;
+				}
+
+				if (openBracketsStack.Count == 0 || c != openBracketsStack.Pop()) {
 					return false;
 				}
 			}
