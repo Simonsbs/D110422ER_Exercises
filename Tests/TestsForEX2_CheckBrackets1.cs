@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Tests {
+
 	public class TestsForEX2_CheckBrackets1 {
 		[Theory]
 		[InlineData("()")]
