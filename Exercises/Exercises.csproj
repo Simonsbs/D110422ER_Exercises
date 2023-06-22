@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BigONotationSamples.cs" />
     <Compile Include="EX1.cs" />
     <Compile Include="EX2.cs" />
     <Compile Include="EX3.cs" />

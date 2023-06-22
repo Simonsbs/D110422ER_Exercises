@@ -15,6 +15,22 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{A0F321
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{C7D96F78-3984-4FBE-96AB-53CE95E5ED6E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PDFS", "PDFS", "{65AEA671-498E-480B-8E50-7164E538A6C7}"
+	ProjectSection(SolutionItems) = preProject
+		PDFS\Whiteboard[10].pdf = PDFS\Whiteboard[10].pdf
+		PDFS\Whiteboard[11].pdf = PDFS\Whiteboard[11].pdf
+		PDFS\Whiteboard[12].pdf = PDFS\Whiteboard[12].pdf
+		PDFS\Whiteboard[1].pdf = PDFS\Whiteboard[1].pdf
+		PDFS\Whiteboard[2].pdf = PDFS\Whiteboard[2].pdf
+		PDFS\Whiteboard[3].pdf = PDFS\Whiteboard[3].pdf
+		PDFS\Whiteboard[4].pdf = PDFS\Whiteboard[4].pdf
+		PDFS\Whiteboard[5].pdf = PDFS\Whiteboard[5].pdf
+		PDFS\Whiteboard[6].pdf = PDFS\Whiteboard[6].pdf
+		PDFS\Whiteboard[7].pdf = PDFS\Whiteboard[7].pdf
+		PDFS\Whiteboard[8].pdf = PDFS\Whiteboard[8].pdf
+		PDFS\Whiteboard[9].pdf = PDFS\Whiteboard[9].pdf
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
