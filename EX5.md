@@ -8,3 +8,4 @@
 ["floor", "flower"] - "flo"
 ["cat", "dog", "frog", "donkey"] - ""
 ["stream", "strong", "street"] - "str"
+["simon"] - "simon"
