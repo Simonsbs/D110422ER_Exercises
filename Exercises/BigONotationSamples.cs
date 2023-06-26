@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Exercises {
+
 	internal class BigONotationSamples {
 		public BigONotationSamples() {
 			var arr = new int[10]{
