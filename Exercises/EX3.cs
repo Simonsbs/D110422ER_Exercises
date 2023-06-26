@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Exercises {
+
 	public static class EX3 {
 		//	12321
 		public static bool IsPalindrom(int value) {

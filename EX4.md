@@ -5,6 +5,6 @@
 3. the function should return the best profit possible, 	
    if only able to buy and sell once!
 
-
+   
 4 - [8, 2, 5, 3, 6, 4]
 0 - [7, 6, 4, 3, 1]
