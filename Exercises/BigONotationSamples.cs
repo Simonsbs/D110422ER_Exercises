@@ -12,6 +12,7 @@ namespace Exercises {
 			};
 
 			Sample1(arr);
+
 		}
 
 
@@ -82,6 +83,39 @@ namespace Exercises {
 
 		public bool AreUnique2(int[] array) {
 			HashSet<int> set = new HashSet<int>();
+
+			for (int i = 0;i < array.Length; i++) {
+				if (set.Contains(array[i])) {
+					return false;
+				}
+				set.Add(array[i]);
+			}
+
+			return true;
+		}
+
+		public bool AreUnique3(int[] array) {
+			HashSet<int> set = new HashSet<int>(array);
+
+			return set.Count == array.Length;
+		}
+
+		public bool AreUniqe4(int[] arr) {
+			int max = 0;
+
+			for (int i = 0; i < arr.Length; i++) {
+				if (arr[i] > max)
+					max = arr[i];
+			}
+			max++;
+			int[] arrT = new int[max];
+
+
+			for (int i = 0; i < arr.Length; i++)
+				arrT[arr[i]]++;
+
+			for (int i = 0; i < arrT.Length; i++)
+				if (arrT[i] > 1) return false;
 
 			return true;
 		}
