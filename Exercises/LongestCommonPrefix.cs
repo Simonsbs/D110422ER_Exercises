@@ -69,5 +69,43 @@ namespace Exercises {
 			return true;
 		}
 
+
+
+
+		// Thanks to Mohamad
+		public static string Solution3(string[] arr) {
+			if (arr.Length == 0 || arr == null)
+				return "";
+
+			if (arr.Length == 1)
+				return arr[0];
+
+			string[] newArray = Sort(arr);
+			
+			int min = Math.Min(newArray[0].Length, newArray[newArray.Length - 1].Length);
+
+			string st1, st2;
+			int i = 0;
+			st1 = newArray[0];
+			st2 = newArray[newArray.Length - 1];
+			while (i < min && st1[i].CompareTo(st2[i]) == 0)
+				i++;
+
+			return newArray[0].Substring(0, i);
+		}
+
+		public static string[] Sort(string[] arr) {
+			string temp;
+			for (int i = 0; i < arr.Length; i++) {
+				for (int j = 0; j < arr.Length - 1; j++) {
+					if (arr[j].CompareTo(arr[j + 1]) > 0) {
+						temp = arr[j];
+						arr[j] = arr[j + 1];
+						arr[j + 1] = temp;
+					}
+				}
+			}
+			return arr;
+		}
 	}
 }
