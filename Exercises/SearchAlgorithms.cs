@@ -1,4 +1,5 @@
 ﻿namespace Exercises {
+
 	public static class SortAlgorithms {
 		public static void MergeSort(int[] arr, int left, int right) {
 			if (left < right) {
@@ -68,7 +69,7 @@
 
 			int loopCount = 0;
 
-			while (left <= right) { 
+			while (left <= right) {
 				loopCount++;
 
 				int midPoint = left + right / 2;

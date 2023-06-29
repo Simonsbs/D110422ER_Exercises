@@ -16,4 +16,34 @@ namespace Tests {
 			Assert.Equal(result, expectedResult);
 		}
 	}
+
+	public class TestsFor_LongestCommonPrefix {
+		[Theory]
+		[InlineData(new[] { "floor", "flower", "flip" }, "fl")]
+		[InlineData(new[] { "floor", "flower" }, "flo")]
+		[InlineData(new[] { "flowers", "flower" }, "flower")]
+		[InlineData(new[] { "cat", "dog", "frog", "donkey" }, "")]
+		[InlineData(new[] { "stream", "strong", "street" }, "str")]
+		[InlineData(new[] { "cat" }, "cat")]
+
+		public void TestsFor_LongestCommonPrefix_Solution1(string[] valueToTest, string expectedResult) {
+			string result = Exercises.LongestCommonPrefix.Solution1(valueToTest);
+
+			Assert.Equal(result, expectedResult);
+		}
+
+		[Theory]
+		[InlineData(new[] { "floor", "flower", "flip" }, "fl")]
+		[InlineData(new[] { "floor", "flower" }, "flo")]
+		[InlineData(new[] { "flowers", "flower" }, "flower")]
+		[InlineData(new[] { "cat", "dog", "frog", "donkey" }, "")]
+		[InlineData(new[] { "stream", "strong", "street" }, "str")]
+		[InlineData(new[] { "cat" }, "cat")]
+
+		public void TestsFor_LongestCommonPrefix_Solution2(string[] valueToTest, string expectedResult) {
+			string result = Exercises.LongestCommonPrefix.Solution2(valueToTest);
+
+			Assert.Equal(result, expectedResult);
+		}
+	}
 }
