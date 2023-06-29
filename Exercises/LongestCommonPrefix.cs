@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Exercises {
 	public static class LongestCommonPrefix {
@@ -106,6 +107,47 @@ namespace Exercises {
 				}
 			}
 			return arr;
+		}
+
+
+		// Thanks to Yitzhak
+		public static string Solution4(string[] arr) {
+			if (!arr.Any()) {
+				return "";
+			}
+
+			string result = "";
+
+			int minLength = arr.Skip(1).Aggregate(arr[0].Length, (acc, s) => Math.Min(acc, s.Length));
+			
+			for (int i = 0; i < minLength; i++) {
+				bool allEqual = arr.Skip(1).All(x => x[i] == arr[0][i]);
+
+				if (allEqual) {
+					result += arr[0][i];
+				} else {
+					break;
+				}
+			}
+
+			return result;
+		}
+
+		// Thanks to Yitzhak
+		public static string Solution5(string[] arr) {
+			if (!arr.Any()) {
+				return "";
+			}
+
+			string prefix = arr[0];
+
+			foreach (string str in arr.Skip(1)) {
+				while (!str.StartsWith(prefix)) {
+					prefix = prefix.Remove(prefix.Length - 1);
+				}
+			}
+
+			return prefix;
 		}
 	}
 }
