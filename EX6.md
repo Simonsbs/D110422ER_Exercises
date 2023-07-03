@@ -7,6 +7,6 @@
 "racecar" - "racecar"
 "abcdef" - "a" / "b" / "c" / "d" / "e" / "f"
 "a" - "a"
-"acdfdcabbbaccc" - "cabbbac"
+"acdfdcabbbaccc" - "acdfdca" / "cabbbac"
 "babad" - "bab" / "aba"
 "cbbd" - "bb"
