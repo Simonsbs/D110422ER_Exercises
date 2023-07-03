@@ -13,6 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{A0F321
 		EX4.md = EX4.md
 		EX5.md = EX5.md
 		EX6.md = EX6.md
+		EX7.md = EX7.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{C7D96F78-3984-4FBE-96AB-53CE95E5ED6E}"
