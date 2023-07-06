@@ -9,7 +9,6 @@ public long MinCost(int[] nums, int[] costs){
 3. The second array is the cost of an action on cell nums[i] being costs[i]
 4. return the minimum total cost so that all elements of the nums array are equal
 
-
 [1,3,5,2], [2,3,1,14] - 8
 [2,2,2,2,2], [4,2,8,1,3] - 0
 [1,2,3], [1,1,1] - 2
