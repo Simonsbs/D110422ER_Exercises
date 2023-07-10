@@ -49,6 +49,7 @@
     <Compile Include="EX3.cs" />
     <Compile Include="EX4.cs" />
     <Compile Include="LongestCommonPrefix.cs" />
+    <Compile Include="LongestConsecutiveArray.cs" />
     <Compile Include="LongestPalindromSubstring.cs" />
     <Compile Include="MinimumCostArray.cs" />
     <Compile Include="Program.cs" />
